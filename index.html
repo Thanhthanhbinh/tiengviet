@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="favicon.ico" rel="icon" type="image/x-icon" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <title>IndexM</title>
+        <script src="Css.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Geostar|Geostar+Fill|Londrina+Shadow|Teko&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    </head>
+    <body>
+<!--NAVIGATION BAR-->
+        <div class="navigation" >
+            <div style="float: left;justify-items: center;">
+                <a href="#" style="font-size: 40px;color:initial; color:rgb(0, 77, 152); font-style: italic" class="nav-icon heading">Electriquiped</a>
+                <a  class="nav-icon" href="index.html" id="home" role="button" onmouseover="change_Colorr('home','rgb(0, 77, 152)')" onmouseout="change_Colorr('home','black')"><i class="fas fa-home fa-2x"></i></a>
+                <a class="nav-icon" id="input" href="input.html" role="button" onmouseover="change_Colorr('input','rgb(255, 171, 0)')" onmouseout="change_Colorr('input','black')"><i class="fas fa-edit fa-2x"></i></a>
+                <a href="#" style="font-size: 20px;color:initial; color:rgb(0, 77, 152); font-style: italic;" class="nav-icon heading">Vì nhu cầu tiết kiệm của bạn</a>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+<!--INFO-->
+        <div class="info">
+<!--INFORMATION-->
+
+<!--CAROSEL-->
+            <div class="info-img" style="align-self: center;">
+                <i style=" z-index: 5;"class="fas fa-chevron-left prev fa-2x center" id="prev" onclick="prev();" onmouseover="change_Colorr('prev','rgb(0, 77, 152)')" onmouseout="change_Colorr('prev','black')" ></i>
+                <img src="dpl-vampire-appliances.jpg" class="img info-img-img " style="width: auto; height: 250px;" alt="vampire appliances">
+                <img src="16559855_303.jpg" class="img  info-img-img" style="display: none;height: 250px;width: auto" alt="green energy">
+                <img src="PAFF_020718_airpollution-609x419.jpg" class="img info-img-img" style="display: none;height: 250px;width: auto" alt="pollution">
+                <img src="Picture1.png" class="img info-img-img" style="display: none;height: 250px;width: auto" alt="Tieenf">
+                <img src="Picture2.png" class="img info-img-img" style="display: none;height: 250px;width: auto" alt="4">
+                <img src="Picture3.png" class="img info-img-img" style="display: none;height: 250px;width: auto" alt="5">
+
+                <i style=" z-index: 5;"class="fas fa-chevron-right next fa-2x center" id="next" onclick="next();" onmouseover="change_Colorr('next','rgb(0, 77, 152)')" onmouseout="change_Colorr('next','black')"></i>
+            </div>
+        </div>
+        <div class="info" style="flex-direction: column">
+            <span style=" font-size: 50px" class="center normal">
+                Hướng dẫn: <i class="fas fa-book"></i>
+            </span>
+            <ol style=" font-size: 30px" class="center normal">
+                <li>Ấn vào biểu tượng "edit"<i class="fas fa-edit fa-1x"></i></li>
+                <li>Đăng nhập vào tài khoản Google<i class="fab fa-google"></i></li>    
+                <li>Hãy chọn đồ gia dụng<i class="fas fa-blender-phone"></i></li>
+                <li>Nhập công suất(W), thời gian sử dụng(hours), số lượng <i class="fas fa-plug"></i></li>     
+                <li>Nhập số ngày sử dụng hàng tháng<i class="far fa-calendar-alt"></i> </li>   
+                <li>Ấn vào “submit” <i class="fas fa-check-double"></i></li>
+                <li>Để nhận lời khuyên về việc tiết kiệm điện, ấn vào 10% hoặc 5% hoặc 3% <i class="fas fa-bolt"></i></li>
+            </ol>
+            <div style="border-top:4px solid black; margin-left: 100px;margin-right: 100px" ></div>
+            <a class="nav-icon center " id="input1" href="input.html" role="button" onmouseover="change_Colorr('input1','rgb(0, 77, 152)')" onmouseout="change_Colorr('input1','black')" style="align-self: center"><i class="fas fa-edit fa-3x"></i></a>
+        </div>
+        <br>
+        <br>
+        
+    </body>
+    <footer>
+<!--FOOTER-->
+            <div class="footer" style="left:0; right:0">
+                <div style="align-self: center; margin-top: 5px;">
+                    <span class="Heading" style="font-size: 40px">ĐƯỢC LÀM BỞI :</span>
+                </div>
+                <div style="align-self: center" class="name">
+                    <a href="#" style="font-size:20px ;width: initial;color: initial" class="container highlights">NGUYỄN XUÂN THÁI DƯƠNG</a>
+
+                    <a href="#" style="font-size:20px ;width: initial;color:initial" class="container highlights">ĐỖ THANH THANH BÌNH</a>
+                </div>
+                <div class="row-con center" >
+                    <a onmouseover="change_Colorr('facebook','blue')" onmouseout="change_Colorr('facebook','black')" href="https://www.facebook.com/" role="button" id="facebook"  ><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a  onmouseover="change_Colorr('youtube','red')" onmouseout="change_Colorr('youtube','black')" href="https://www.youtube.com/" role="button" style="margin-left: 30px" id="youtube"><i class="fab fa-youtube fa-2x"></i></a>
+                    <a  onmouseover="change_Colorr('twitter','blue')" onmouseout="change_Colorr('twitter','black')" href="https://twitter.com/" role="button" style="margin-left: 30px" id="twitter"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+            </div>
+        </footer>
+</html>

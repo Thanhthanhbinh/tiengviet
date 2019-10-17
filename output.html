@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="favicon.ico" rel="icon" type="image/x-icon" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <title>OUTPUT</title>
+        <script src="output.js"></script>
+        <script src="Css.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Geostar|Geostar+Fill|Londrina+Shadow|Teko&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    </head>
+    <body onload="calculate();savings()">
+<!--NAVIGATION BAR-->
+        <div class="navigation" >
+            <div style="float: left;justify-items: center;">
+                <a href="#" style="font-size: 40px; color:initial;color:rgb(0, 77, 152); font-style: italic" class="nav-icon heading">Electriquiped</a>
+                <a  class="nav-icon" href="index.html" id="home" role="button" onmouseover="change_Colorr('home','blue')" onmouseout="change_Colorr('home','black')"><i class="fas fa-home fa-2x"></i></a>
+                <a class="nav-icon" id="input" href="input.html" role="button" onmouseover="change_Colorr('input','red')" onmouseout="change_Colorr('input','black')"><i class="fas fa-edit fa-2x"></i></a>
+                <a href="#" style="font-size: 20px;color:initial; color:rgb(0, 77, 152); font-style: italic" class="nav-icon heading">Vì nhu cầu tiết kiệm của bạn</a>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+<!--MONEY-->
+        <div class="output-box center" style="background-color:rgb(56,136,55); flex-wrap: wrap">
+            <header class="normal center" style="font-size: 30px" >Tổng số tiền là...</header>
+            <div style="align-self: center;">
+                <header id="number" class="money" style="text-shadow: 5px 5px lightgray; font-size: 60px">0</header>
+            </div>
+            <header class="normal center" >VND</header>
+        </div>
+        <div style="border-top:4px solid black;" class="center"></div>
+        <div class="output-box center" style="background-color:whitesmoke; flex-wrap: wrap;">
+            <div style="align-self: center;">
+                <header class="normal center" style="font-size: 30pxl; ">Lượng Cacbon thải ra là...</header>
+            </div>
+            <div style="align-self: center; ">
+                <header id="carbon" class="normal center money" style="font-size: 60px;text-shadow: 5px 5px lightgray">0</header>
+            </div>
+                <header class="normal center" >KG</header>
+        </div>
+        <div style="border-top:4px solid black;" class="center"></div>
+<!--SAVING MONEY-->
+            <header class="highlights center output-box" style="background-color:rgb(122, 143, 251); padding: 30px">Cách để bạn tiết kiệm tiền:</header>
+            <div class="row-con">
+                <button class="button center " href="#" onclick="show('10%');show_per('10%')">10%</a>
+                <button class="button center " href="#" onclick="show('5%');show_per('5%')">5%</a>
+                <button class="button center " href="#" onclick="show('3%');show_per('3%')">3%</a>
+            </div>
+            <div class="row-con">
+    <!--10% SAVING-->
+                <div id="10%" class="output-box center saving-plans" style="display: none; background-color:rgb(255, 219, 80);" >
+                    <header id="10%-text" style="text-align: center;padding: 30px"></header>
+                </div>
+    <!--5% SAVING-->
+                <div id="5%" class="output-box center saving-plans" style="display: none;background-color:rgb(255, 219, 80)" >
+                    <header id="5%-text" style="text-align: center;padding: 30px"></header>
+                </div>
+    <!--3% SAVING-->
+                <div id="3%" class="output-box center saving-plans"style="display: none;background-color:rgb(255, 219, 80)" >
+                    <header id="3%-text" style="text-align: center;padding: 30px"></header>
+                </div>
+        </div>
+        <!--ALEXA-->
+        <div class="info">
+            <button class="button " style=" width:100%;" onclick='location.href="https://alexa.amazon.com/spa/index.html#welcome"'>Kết nối với ALEXA</button>
+        </div>
+    </body>
+    <footer>
+        <!--FOOTER-->
+                    <div class="footer" style="left:0; right:0">
+                        <div style="align-self: center; margin-top: 5px;">
+                            <span class="Heading" style="font-size: 40px">ĐƯỢC LÀM BỞI :</span>
+                        </div>
+                        <div style="align-self: center" class="name">
+                            <a href="#" style="font-size:20px ;width: initial;color: initial" class="container highlights">ĐỖ THANH THANH BÌNH</a>
+                            <a href="#" style="font-size:20px ;width: initial;color: initial" class="container highlights">NGUYỄN XUÂN THÁI DƯƠNG</a>
+
+                        </div>
+                        <div class="row-con center">
+                            <a onmouseover="change_Colorr('facebook','blue')" onmouseout="change_Colorr('facebook','black')" href="https://www.facebook.com/" role="button" id="facebook"  ><i class="fab fa-facebook-square fa-2x"></i></a>
+                            <a  onmouseover="change_Colorr('youtube','red')" onmouseout="change_Colorr('youtube','black')" href="https://www.youtube.com/" role="button" style="margin-left: 30px" id="youtube"><i class="fab fa-youtube fa-2x"></i></a>
+                            <a  onmouseover="change_Colorr('twitter','blue')" onmouseout="change_Colorr('twitter','black')" href="https://twitter.com/" role="button" style="margin-left: 30px" id="twitter"><i class="fab fa-twitter fa-2x"></i></a>
+                        </div>
+                    </div>
+                </footer>
+        </html>
